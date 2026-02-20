@@ -1,0 +1,39 @@
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
+DATA_DIR = PROJECT_ROOT / "data"
+MODELS_DIR = PROJECT_ROOT / "models"
+REPORTS_DIR = PROJECT_ROOT / "reports"
+
+TRAIN_CSV_PATH = DATA_DIR / "mnist_train.csv"
+TEST_CSV_PATH = DATA_DIR / "mnist_test.csv"
+
+HOG_SVM_MODEL_PATH = MODELS_DIR / "hog_svm.joblib"
+RESNET_MODEL_PATH = MODELS_DIR / "resnet.pt"
+
+METRICS_PATH = REPORTS_DIR / "metrics.json"
+CONFUSION_SVM_PATH = REPORTS_DIR / "confusion_svm.png"
+CONFUSION_RESNET_PATH = REPORTS_DIR / "confusion_resnet.png"
+TRAINING_CURVES_PATH = REPORTS_DIR / "training_curves.png"
+
+SEED = 42
+
+WINDOW_W = 1500
+WINDOW_H = 800
+CANVAS_SIZE = 600
+CANVAS_ORIGIN = (100, 100)
+BRUSH_RADIUS = 22
+GRID_SIZE = 28
+THROTTLE_MS = 50
+FPS = 60
+
+SVM_C = 1.0
+SVM_MAX_ITER = 5000
+
+RESNET_EPOCHS = 5
+RESNET_BATCH_SIZE = 128
+RESNET_LR = 1e-3
+RESNET_WEIGHT_DECAY = 1e-4
+RESNET_TRAIN_SIZE = 55000
+RESNET_VAL_SIZE = 5000
