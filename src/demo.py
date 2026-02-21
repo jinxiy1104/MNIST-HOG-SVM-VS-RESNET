@@ -168,6 +168,8 @@ def main() -> None:
         screen.fill((20, 22, 25))
         render_image28_grid(screen, image28)
         render_probs(screen, probs, font)
+        resnet_text = font.render("ResNet Prediction:", True, (235, 235, 235))
+        screen.blit(resnet_text, (820, 80))
         if svm_pred is None:
             display_text = "Draw a digit"
         else:
