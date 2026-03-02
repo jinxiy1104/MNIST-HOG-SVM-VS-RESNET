@@ -1,4 +1,4 @@
-# mnist-hog-svm-vs-resnet
+﻿# mnist-hog-svm-vs-resnet
 
 Train and compare two MNIST classifiers from CSV files:
 - HOG + SVM (digit prediction only)
@@ -6,13 +6,19 @@ Train and compare two MNIST classifiers from CSV files:
 
 The project also includes a `pygame` demo that lets you draw digits and run unified inference from both models with throttled updates.
 
+## Model Comparison Diagram
+
+<p align="center">
+  <img src="docs/images/hog-svm-vs-resnet18.png" alt="HOG+SVM vs ResNet18 pipeline" width="1100" />
+</p>
+
 ## Dataset Format
 
 Expected files:
 - `data/mnist_train.csv` (60,000 rows)
 - `data/mnist_test.csv` (10,000 rows)
 
-Each row: 785 values, first label 0–9, remaining 784 pixels 0–255.
+Each row: 785 values, first label 0鈥?, remaining 784 pixels 0鈥?55.
 
 ## Setup
 
@@ -59,3 +65,4 @@ python -m src.demo
   - `reports/confusion_svm.png`
   - `reports/confusion_resnet.png`
   - `reports/training_curves.png`
+
