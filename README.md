@@ -49,6 +49,15 @@ Run demo:
 python -m src.demo
 ```
 
+
+## Demo Video
+
+<p align="center">
+  <video src="docs/videos/demo.mp4" controls width="1100" preload="metadata"></video>
+</p>
+
+If inline playback is not available in your viewer, download/watch directly: [Demo Video](docs/videos/demo.mp4)
+
 ## Demo Controls
 
 - Left mouse: draw
@@ -65,4 +74,8 @@ python -m src.demo
   - `reports/confusion_svm.png`
   - `reports/confusion_resnet.png`
   - `reports/training_curves.png`
+
+
+
+
 
